@@ -1,0 +1,77 @@
+/* CSS to make the search box and buttons sticky */
+
+
+.exchange-rates {
+    display: flex;
+    /* background-color: #007bff; /* Background color for the entire container */
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.exchange-rate {
+    background-color: #333; /* Dark background for text */
+    color: #aaa;
+    text-align:center;
+    /* border-radius: 10px; /* Increase border radius for rounded corners */
+    padding: 15px 20px; /* Increase padding for larger rectangles */
+    margin-right: 10px; /* Add margin to the right of each rectangle */
+    font-size: 10px;
+    width: 180px;
+}
+
+.exchange-rate strong {
+     color: #fff;
+     font-size: 20px;
+}
+
+.exchange-rate:last-child {
+    margin-right: 0; /* Remove margin from the last rectangle */
+}
+
+.action-btn {
+   margin-right: 5px;
+}
+
+
+/* CSS to make the space button transparent */
+.transparent-button {
+    background-color: transparent;
+    border: none;
+    pointer-events: none; /* Disables click events */
+    cursor: not-allowed; /* Displays a "not-allowed" cursor on hover */
+}
+.transparent-button:hover {
+    /* You can leave this block empty to prevent color changes */
+    /* Or specify custom styles to maintain the same appearance */
+}
+
+
+.datatable-buttons {
+    border-radius: 0; /* Set border-radius to 0 for square edges */
+}
+
+
+
+    .exchange-rate.eurusd {
+        background-image: url('eurusd-flag.png'); /* Replace 'eurusd-flag.png' with the actual flag image */
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        padding-left: 30px; /* Adjust padding as needed */
+    }
+
+    .exchange-rate.eurgbp {
+        background-image: url('eurgbp-flag.png'); /* Replace 'eurgbp-flag.png' with the actual flag image */
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        padding-left: 30px; /* Adjust padding as needed */
+    }
+
+    .exchange-rate.eurnok {
+        background-image: url('eurnok-flag.png'); /* Replace 'eurnok-flag.png' with the actual flag image */
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        padding-left: 30px; /* Adjust padding as needed */
+    }
+
+th, td { white-space: nowrap; }
